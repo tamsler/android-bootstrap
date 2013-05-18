@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Some Mobile App</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="tv_action_bar_logo">Some Mobile App</string>
+    
+    <!--  Accessibility : A11Y -->
+	<string name="a11y_refresh">Refresh</string>
+	<string name="a11y_previous">Previous</string>
+	<string name="a11y_more">More Actions</string>
+	<string name="a11y_some_action">Some Action</string>
+
+</resources>

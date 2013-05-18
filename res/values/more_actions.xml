@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="more_actions_main">
+        <item>Aa</item>
+        <item>Bb</item>
+        <item>Cc</item>
+        <item>Dd</item>
+        <item>Ed</item>
+        <item>Ff</item>
+    </string-array>
+
+</resources>

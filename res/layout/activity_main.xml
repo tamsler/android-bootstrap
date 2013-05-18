@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/action_bar" />
+    
+    <ListView
+        android:id="@+id/lv_persons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/split_action_bar"
+        android:layout_below="@+id/action_bar" />
+
+    <include
+        android:id="@+id/split_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_action_bar_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/split_action_bar" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/action_bar"
+        android:layout_marginRight="@dimen/lv_more_margine_right"
+        layout="@layout/action_bar_more" />
+
+</RelativeLayout>

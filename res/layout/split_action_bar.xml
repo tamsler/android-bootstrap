@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/split_action_bar_height"
+    android:background="@drawable/split_action_bar_gradient" >
+
+    <ImageButton
+        android:id="@+id/ib_split_action_bar_share"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/actionbar_button_state"
+        android:contentDescription="@string/a11y_some_action"
+        android:src="@drawable/ic_action_share"
+        android:onClick="doSomeAction"
+        android:visibility="gone" />
+
+</LinearLayout>

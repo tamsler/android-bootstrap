@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@drawable/action_bar_gradient" >
+
+    <View
+        android:id="@+id/v_action_bar_previous"
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/actionbar_button_state"
+        android:onClick="showPreviousActivity" />
+
+    <ImageView
+        android:id="@+id/iv_action_bar_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/iv_action_bar_previous_margin_left"
+        android:contentDescription="@string/a11y_previous"
+        android:src="@drawable/ic_action_previous" />
+
+    <TextView
+        android:id="@+id/tv_action_bar_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/iv_action_bar_logo_margin_left"
+        android:layout_toRightOf="@+id/iv_action_bar_previous"
+        android:text="@string/tv_action_bar_logo"
+        android:textColor="#4C69FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/tv_action_bar_title_margin_left"
+        android:layout_toRightOf="@+id/tv_action_bar_logo"
+        android:text=""
+        android:textSize="@dimen/tv_action_bar_title" />
+
+    <ImageButton
+        android:id="@+id/ib_action_bar_more"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/iv_action_bar_more_margin_right"
+        android:background="@drawable/actionbar_button_state"
+        android:contentDescription="@string/a11y_more"
+        android:onClick="toggleMoreMenuActions"
+        android:src="@drawable/ic_action_more" />
+
+    <ProgressBar
+        android:id="@+id/pb_action_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

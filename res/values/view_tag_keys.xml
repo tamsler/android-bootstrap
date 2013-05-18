@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="view_tag_key_holder">h</string>
+    <string name="view_tag_key_data">d</string>
+    <string name="view_tag_key_selected">s</string>
+
+</resources>
